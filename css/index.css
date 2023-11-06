@@ -1,11 +1,66 @@
-/* Example of @import use
-This imports the `reset.css` file */
-@import url('./reset.css');
+html {
+  font-size: 10px;
+}
 
-/* For testing purposes, delete this code */
 body {
-  font-size: max(20vw, 400px);
-  width: min(20vw, 400px);
-  margin: 20px;
-  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #eee;
+  background-size: cover;
+  background-position: center;
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+figure {
+  background: #fff;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px;
+  text-align: left;
+}
+
+strong {
+  color: black;
 }
